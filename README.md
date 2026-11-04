@@ -1,49 +1,90 @@
 # Hi, I'm Viet 👋
 
-🔍 Interested in Machine Learning, LLM applications, information retrieval, and end-to-end AI systems
-🌱 Currently learning and building with multi-agent systems, RAG, FastAPI, and Docker
+**AI Engineer | Artificial Intelligence & Data Science Student**
 
-I enjoy building practical systems that connect data processing, machine learning models, APIs, and user-facing applications.
+I'm a final-year AI & Data Science student at Thuy Loi University, interested in building practical AI applications that connect machine learning models, LLMs, backend services, and user-facing products.
 
-## Featured Projects
+My work focuses on **LLM applications, RAG, AI inference, and end-to-end AI engineering**.
 
-### 🧩 [Multi-Agent Customer Intelligence Assistant](https://github.com/loanhviet/multi-agent-customer-intelligence)
-A production-shaped, approval-first multi-agent system that turns an inbound customer email into a cited, evidence-grounded briefing — researched automatically, then reviewed and approved by a human before anything is sent.
-- 7-agent LangGraph workflow (email, company resolution, web research, calendar, semantic memory, report generation, human approval)
-- Durable PostgreSQL checkpointing that survives restarts and resumes exactly at a pending approval
-- Approval-first safety model: every outbound action is bound to a SHA-256 hash of the exact content shown to the reviewer
-- 6-gate Tool Harness (schema, auth, scope/approval, rate limit, audit, execute) in front of every external call
-- Evidence-grounded report generation separating fact / inference / conflict / unknown per claim, backed by a semantic-memory RAG layer (PostgreSQL + Qdrant)
-- 290+ automated tests at 90%+ coverage; deployed via Docker Compose on AWS EC2
+🌐 **Portfolio:** https://loanhviet.dev  
+💼 **LinkedIn:** https://www.linkedin.com/in/loanhviet  
+📍 **Hanoi, Vietnam**
+
+---
+
+## 🚀 Featured Projects
+
+### 🎙️ [OpenDubber](https://dubber.loanhviet.dev/)
+**Live Vietnamese AI Dubbing for Chrome**
+
+A Chrome extension that translates English video subtitles into Vietnamese speech, synchronized with playback on YouTube, Udemy, and Coursera.
+
+- **On-device AI inference:** Runs Kokoro TTS directly in the browser using ONNX Runtime Web, with WebGPU acceleration and WASM fallback.
+- **LLM translation:** FastAPI backend with structured outputs, speech-text condensation, caching, provider fallback, and rate limiting.
+- **Audio synchronization:** Video-clock synchronization with adaptive speech speed and CPU-aware catch-up.
+- **Performance:** Achieved a real-time factor (RTF) of 0.25 on a laptop GPU.
+
+**Tech:** TypeScript, Chrome Extension MV3, ONNX Runtime Web, WebGPU, Web Audio API, Python, FastAPI, Gemini
+
+🔗 [Website](https://dubber.loanhviet.dev/) · [Chrome Web Store](https://chromewebstore.google.com/detail/dlbebalamknjefgmpibopjogdhdclpdi)
+
+### 🛰️ [Crop Mapping](https://crop.loanhviet.dev/)
+**Satellite Crop-Type Mapping Web Application**
+
+An AI-powered geospatial application for crop-type segmentation using Sentinel-2 satellite imagery.
+
+- **Deep Learning:** Retrained the original TSViT (CVPR 2023) implementation on the PASTIS24 benchmark.
+- **Geospatial application:** Interactive area selection, crop classification maps, GeoTIFF/GeoJSON outputs, and area statistics.
+- **Deployment:** Dockerized inference on Oracle Cloud ARM64.
+- **CI/CD:** GitHub Actions for automated testing, ARM64 builds, deployment, health checks, and rollback.
+
+**Tech:** Python, PyTorch, TSViT, FastAPI, Leaflet, Docker, GitHub Actions, Oracle Cloud
+
+🔗 [Live Demo](https://crop.loanhviet.dev/) · [GitHub](https://github.com/loanhviet/crop-mapping)
 
 ### 🤖 [Drive Agent](https://github.com/loanhviet/drive-agent)
-An LLM agent that connects to Google Drive through guarded tool calling and user-scoped semantic memory.
-- JWT-authenticated chat workflow
-- Six-step Tool Registry for validation, authorization, rate limiting, auditing, and execution
-- Read-only Google Drive document extraction
-- Qdrant semantic memory and SQLite chat history
-- SSE chat streaming and persistent audit logs
-- End-to-end demo available in the repository
+**LLM Assistant with Google Drive Integration**
 
-### 🔍 [AI Image Detector](https://github.com/loanhviet/ai-generated-image-detector)
-A machine learning system for detecting AI-generated images using handcrafted image features and XGBoost.
-- Trained and evaluated on more than 86,000 images
-- FFT, GLCM, residual noise, and color-based features
-- Achieved ROC-AUC of 0.9356
-- Deployed with Streamlit on Hugging Face Spaces
-- [Live Demo](https://loanhviet-ai-image-detector.hf.space/)
+An LLM application combining controlled tool calling, semantic memory, and authenticated backend APIs.
 
-## Current Focus
-- Multi-agent systems and LangGraph orchestration
-- Retrieval-Augmented Generation and semantic search
-- FastAPI backend development
-- Docker-based AI application deployment
-- Testing and reliable software workflows
+- Read-only Google Drive integration with guarded tool execution.
+- JWT-authenticated chat APIs and SSE streaming.
+- Qdrant semantic memory with SQLite conversation history.
+- Docker-based deployment and persistent audit logs.
 
-## Technologies
-`Python` · `TypeScript` · `FastAPI` · `LangGraph` · `Docker` · `Git` · `SQL` · `PostgreSQL` · `Qdrant` · `Elasticsearch` · `Scikit-learn` · `XGBoost`
+**Tech:** Python, FastAPI, Qdrant, SQLite, Docker
 
-## Contact
-📧 [loanhviet.mmo@gmail.com](mailto:loanhviet.mmo@gmail.com)
-📱 +84 354 712 005
-📍 Hanoi, Vietnam
+🔗 [GitHub Repository](https://github.com/loanhviet/drive-agent)
+
+---
+
+## 🛠️ Technical Skills
+
+**Languages:** Python, TypeScript, C++
+
+**AI & LLM:** RAG, Hybrid Retrieval, Tool Calling, LLM Evaluation
+
+**ML & Inference:** PyTorch, Scikit-learn, XGBoost, ONNX Runtime Web, WebGPU
+
+**Backend & Data:** FastAPI, PostgreSQL, Redis, Qdrant, SQLite
+
+**Engineering:** Docker, GitHub Actions, Git, Linux, Caddy
+
+---
+
+## 🎯 Current Focus
+
+- Building reliable LLM applications and AI agents.
+- Improving retrieval pipelines and RAG systems.
+- Optimizing AI model inference and deployment.
+- Developing production-oriented AI applications.
+
+---
+
+## 📫 Contact
+
+🌐 **Portfolio:** https://loanhviet.dev  
+💼 **LinkedIn:** https://www.linkedin.com/in/loanhviet  
+📧 **Email:** [loanhvietfw@gmail.com](mailto:loanhvietfw@gmail.com)
+
+**Open to AI Engineer Internship & Entry-Level Opportunities.**
